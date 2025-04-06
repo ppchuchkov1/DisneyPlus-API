@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app # Синхронизиране на локалните файлове с контейнера
+    ports:
+      - "5001:5001"
+    environment:
+      MONGODB_URI: mongodb+srv://admin:1234@cluster0.5ifkd.mongodb.net/disneyplus?retryWrites=true&w=majority&appName=Cluster0
+
+    command: ["node", "src/app.js"] # Използвайте node вместо nodemon
+
+  mongo:
+    image: mongo:7.0
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo_data:
