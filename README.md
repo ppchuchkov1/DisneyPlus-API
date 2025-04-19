@@ -27,6 +27,10 @@ A full-stack Disney+ streaming platform clone built with **React**, **Tailwind C
 - 🛠️ **Mongoose** — MongoDB ODM  
 - 🚀 **Render** — For API deployment  
 
+## 🖥 Demo
+
+👉 [Live Demo] https://disneyplus-client.netlify.app/
+
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/a27132d5-0640-4018-a816-4e7675785053)
 ---
